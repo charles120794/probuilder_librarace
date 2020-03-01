@@ -5,7 +5,7 @@
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title> {{ $webdata->thisUser()->hasCompany['company_description'] }} </title>
+        <title> PB | Pro-Builder Web Services </title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
@@ -21,7 +21,6 @@
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     </head>
-
     <style type="text/css">
         .user 
         {
@@ -46,7 +45,6 @@
             border-bottom: 1px solid #999;
         }
     </style>
-
     <body class="hold-transition login-page" style="background-image: linear-gradient(#e6e6e6 , #A3A3A3); background-repeat: no-repeat; background-size: cover;">
         <div class="container" style="height: 100vh;">
             <div class="row">
@@ -73,8 +71,7 @@
                     <div class="module-title clearfix"> 
                         <h1 style="color: #00c0ef;  font-size: 25px; font-weight: 600; font-family: arial; width: 100%">
                             <div class="user"> {{ $webdata->thisUser()->firstname }} {{ $webdata->thisUser()->lastname }} </div>
-                            {{-- <i class="fa fa-globe" aria-hidden="true"></i> OFFICIAL WEBSITE  --}} &nbsp;
-                            <button type="button" onclick="document.getElementById('logout-form').submit();" class="btn btn-primary pull-right btn-sm" style="bottom: 10px;"> LOG OUT SS </button>
+                            <button type="button" onclick="document.getElementById('logout-form').submit();" class="btn btn-primary pull-right btn-sm" style="bottom: 10px;"> LOG OUT </button>
                         </h1>
                         <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none;">
                             {{ csrf_field() }}
@@ -89,7 +86,6 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <?php 
-
                             $modulesAccess = $webdata->getModuleAccess($webdata->thisUser()->id);
 
                             $usersModule = $webdata->usersModuleAccess($modulesAccess);
@@ -109,31 +105,27 @@
                             {
                                 $colSize = 'col-xs-12 col-sm-6 col-md-6 col-lg-3';
                             }
-
                         ?>
-                        
                         @foreach($usersModule as $key => $value)
-                            <div class="{{ $colSize }}">
-                                <div class="small-box {{ $value->module_class }}" style="box-shadow: 0px 2px 10px 3px #ACB3AB;">
-                                    <div class="inner">
-                                        <h3>&nbsp;</h3>
-                                        <p> &nbsp;</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="{{ $value->module_icon }}"></i>
-                                    </div>
-                                    <a href="{{ $value->module_route }}" class="small-box-footer" style="padding: 10px; cursor: pointer;">
-                                        <label style="cursor: pointer;"> {{ $value->module_description }} </label>
-                                    </a>
+                        <div class="{{ $colSize }}">
+                            <div class="small-box {{ $value->module_class }}" style="box-shadow: 0px 2px 10px 3px #ACB3AB;">
+                                <div class="inner">
+                                    <h3>&nbsp;</h3>
+                                    <p> &nbsp;</p>
                                 </div>
+                                <div class="icon">
+                                    <i class="{{ $value->module_icon }}"></i>
+                                </div>
+                                <a href="{{ $value->module_route }}" class="small-box-footer" style="padding: 10px; cursor: pointer;">
+                                    <label style="cursor: pointer;"> {{ $value->module_description }} </label>
+                                </a>
                             </div>
+                        </div>
                         @endforeach
-
                     </div>
                 </div>
             </div>
         </div>
-
         <footer class="main-module-footer">
             <div class="container">
                 <div class="pull-right hidden-xs">
@@ -143,8 +135,6 @@
                  - All rights reserved. </strong>
             </div>
         </footer>
-        
-        <!-- /.login-box -->
         <!-- jQuery 3 -->
         <script src="{{ asset('admin/bower_components/jquery/dist/jquery.min.js') }}"></script>
         <!-- Bootstrap 3.3.7 -->
@@ -161,6 +151,5 @@
                 });
             });
         </script>
-
     </body>
 </html>
