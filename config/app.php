@@ -26,7 +26,7 @@ return [
     'probuilder' => [
         'email'    => 'wongcharlesdave@gmail.com',
         'since'    => '2019',
-        'version'  => '1.2.5',
+        'version'  => '1.0.0',
         'facebook' => 'https://www.facebook.com/probuildermotoshop/',
         'website'  => 'www.datsmotopro.com',
     ],
