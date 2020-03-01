@@ -1,0 +1,191 @@
+.bodyBg {
+	margin: 0;
+	background-color: #026873;
+	padding:15px;
+}
+
+.bodyAddNewBook{
+  font-family: 'Work Sans', sans-serif;
+  background-color: #adbfdb;
+}
+
+.stiLogo{
+	height:50px;
+	width:90px;
+	float:left;
+	padding: 10px 0;
+}
+.owlLogoIn{
+  width: 130px;
+  height: 120px;
+  margin: 0px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+  font-weight: 800;
+  box-shadow: 0px 0px 15px black;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul > li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav ul > li > a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav ul > li > a:hover {
+  color: #000;
+}
+
+nav ul > li > a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav ul > li > a:hover::before {
+  width: 100%;
+}
+
+.LibraRace{
+	text-align:center;
+	font-size: 30px;
+  font-variant: small-caps;
+  float: right;
+  margin: 20px 155px 0px 0px;
+}
+
+.homeDiv{
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px black;
+}
+.btnAddBookMargin{
+  margin-top:50px;
+}
+.btnAddSlideMargin{
+  margin-top: 15px;
+}
+
+.add {
+  border-color: #7f8e8f;
+  color: black;
+}
+
+.add:hover {
+  background: #7f8e8f;
+}
+
+.newBookForm{
+  margin:0 auto;
+  width: 500px;
+  height: 500px;
+  padding: 20px 0px 15px 10px;
+  border: 3px solid blue;
+  background-color: #1ea8e8;
+  box-shadow: 0px 0px 15px black;
+}
+.addBookButton {
+  background-color: #dae4f5;
+  border: 2px solid #92969c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 70px 2px 2px 2px;
+  cursor: pointer;
+  font-weight: 1000;
+  box-shadow: 3px 3px 10px grey;
+  border-radius: 16px;
+}
+.addBookButton:hover{
+  background-color: #92969c;
+}
+.customizeButton{
+  background-color: #dae4f5;
+  border: #b7bdc7;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 3px 3px 10px grey;
+  border-radius: 5px;
+}
+.customizeButtonMargin{
+  margin: 10px 0px 0px 350px;
+}
+.resetMarginInNewSlide{
+  margin: 50px 0px 0px 364px;
+}
+.searchBox{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 100px 0px 10px 0px;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #92969c;
+  border-radius: 10px 0px 0px 4px;
+  box-sizing: border-box;
+}
+.searchSubmitButton{
+  width: 90px;
+  height: 50px;
+  padding: 5px;
+  margin-left: 0; 
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #92969c;
+  border-radius: 0px 10px 4px 0px;
+  box-sizing: border-box;
+}
+.searchSubmitButton:hover{
+  background-color: #92969c;
+}
