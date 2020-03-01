@@ -16,14 +16,8 @@ trait AuthenticatesUsers
      */
     public function showLoginForm()
     {
-        return redirect('http://www.penro.com/login/' . str_random(45));
-    }
-
-    public function showLoginFormWithKey()
-    {
         return view('auth.login');
     }
-
     /**
      * Handle a login request to the application.
      *
