@@ -74,7 +74,7 @@
                         <h1 style="color: #00c0ef;  font-size: 25px; font-weight: 600; font-family: arial; width: 100%">
                             <div class="user"> {{ $webdata->thisUser()->firstname }} {{ $webdata->thisUser()->lastname }} </div>
                             {{-- <i class="fa fa-globe" aria-hidden="true"></i> OFFICIAL WEBSITE  --}} &nbsp;
-                            <button type="button" onclick="document.getElementById('logout-form').submit();" class="btn btn-primary pull-right btn-sm" style="bottom: 10px;"> LOG OUT </button>
+                            <button type="button" onclick="document.getElementById('logout-form').submit();" class="btn btn-primary pull-right btn-sm" style="bottom: 10px;"> LOG OUT SS </button>
                         </h1>
                         <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none;">
                             {{ csrf_field() }}
