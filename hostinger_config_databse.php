@@ -69,21 +69,6 @@ return [
             'engine' => null,
         ],
 
-        'gender' => [
-            'driver' => 'mysql',
-            'host' => env('DB_GAD_HOST', '127.0.0.1'),
-            'port' => env('DB_GAD_PORT', '3306'),
-            'database' => env('DB_GAD_DATABASE', 'gender'),
-            'username' => env('DB_GAD_USERNAME', 'root'),
-            'password' => env('DB_GAD_PASSWORD', ''),
-            'unix_socket' => env('DB_GAD_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ],
-
         'librarace' => [
             'driver' => 'mysql',
             'host' => env('DB_LIBRARACE_HOST', '127.0.0.1'),
