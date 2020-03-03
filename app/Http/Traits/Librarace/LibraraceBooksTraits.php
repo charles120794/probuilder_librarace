@@ -84,10 +84,10 @@ trait LibraraceBooksTraits
 				'updated_by' => $this->thisUser()->id,
 				'updated_date' => (new CommonService)->dateTimeToday('Y-m-d h:i:s'),
 			];
-
+ 
 			if($request->hasFile('book_image')) 
 			{
-				$array = array_add('book_image',$array,$this->profileUpload($request,'book_image',$books->book_image));
+				$array = array_add($array, 'book_image', $this->profileUpload($request,'book_image', $books->book_image) );
 			}
 
 			app('LibraraceBooks')->where('book_id', decrypt($id))->update($array);
